@@ -75,5 +75,9 @@ map [entry "ecl" [list "ecl"]]
 	}
 }
 
+with [get-view "Package Explorer" | get-tree] {
+    select "runner/org.eclipse.rcptt.runner" | get-menu -path "Close Project" | click
+    select "core/org.eclipse.rcptt.core.swt.win64" | get-menu -path "Close Project" | click
+}
 
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
